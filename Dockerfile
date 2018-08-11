@@ -6,7 +6,7 @@ RUN mkdir ${work_dir} && \
 
 # --- install roswell and some common lisp implementations --- #
 
-RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-base curl-dev glib-dev && \
+RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-base curl-dev glib-dev libressl-dev && \
     cd ${work_dir} && \
     git clone --depth=1 -b release https://github.com/roswell/roswell.git && \
     cd roswell && \
@@ -24,6 +24,7 @@ RUN apk add --no-cache make curl-dev && \
 RUN ln -s ${HOME}/.roswell/local-projects work
 ENV PATH /root/.roswell/bin:${PATH}
 
-RUN ros install fukamachi/clack
+RUN ros install fukamachi/clack && \
+    ros install fukamachi/caveman \
 
 RUNRUN apk add --no-cache openssl-dev
