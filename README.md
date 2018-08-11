@@ -30,14 +30,14 @@ NIL
 
 ---------
 
-## Author
+## 作者
 
 eshamster (hamgoostar@gmail.com)
 
-## Copyright
+## 著作権
 
 Copyright (c) 2016 eshamster (hamgoostar@gmail.com)
 
-## License
+## ライセンス
 
 Distributed under the MIT License
