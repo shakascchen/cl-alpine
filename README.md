@@ -1,23 +1,31 @@
-# Dockerfile: cl-base
+# cl-base
 
-A Dockerfile to configure Common Lisp execution environment based on Alpine Linux (from 2.0~).
+roswellを含んだCommon Lisp開発環境をセットアップするためのDockerfileです。
 
-## Installation
+[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)からのフォークです。
+
+もくもく会用に少し変更して利用させてもらいます。
+
+## インストール
 
 ```bash
-$ docker pull eshamster/cl-base
-$ docker run -v <a host folder>:/home/dev/work/lisp -it eshamster/cl-base /bin/bash
+$ docker pull tcool/cl-base
 ```
 
-Note: `/home/dev/work/lisp` is a sym-link to `/home/dev/.roswell/local-projects`
+## 使い方
+```bash
+$ docker run -it tcool/cl-base
+/ # ros run
+* (format t "Hello, world.")
+Hello, world.
+NIL
+* 
+```
 
-## Description
-
-This mainly consists of ...
+## イメージの構成
 
 - Alpine Linux (with glibc)
 - Roswell
-  - The following CL implementations are installed in default
     - sbcl-bin
 
 ---------
