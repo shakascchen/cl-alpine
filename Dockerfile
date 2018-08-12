@@ -26,10 +26,8 @@ ENV PATH /root/.roswell/bin:${PATH}
 EXPOSE 5000
 
 RUN ln -s ${HOME}/.roswell/local-projects work && \
-    apk add --no-cache openssl-dev && \
+    apk add --no-cache openssl-dev curl && \
     ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
     ros install cxxxr/lem  && \
-    cat <<EOF >> app.lisp 
-(lambda (env)(declare (ignore env))'(200 (:content-type "text/plain") ("Hello, Clack!")))
-EOF
+    curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
