@@ -26,4 +26,4 @@ ENV PATH /root/.roswell/bin:${PATH}
 
 RUN ros install fukamachi/clack && \
 
-RUNRUN apk add --no-cache openssl-dev
+RUN apk add --no-cache openssl-dev
