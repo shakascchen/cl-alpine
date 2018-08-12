@@ -99,6 +99,13 @@ $ lem-ncurses
 ;   writing /path/to/myapp/templates/layout/default.tmpl
 ```
 
+#### デプロイ
+
+AWSのLightsailにデプロイします。AWSにアカウントを作成後、次の初期化スクリプトを用いて、Ubuntuのインスタンスを作成、dockerとイメージをインストールしてください。
+
+[docker-on-lightsail](https://github.com/t-cool/cl-base/blob/master/docker-on-lightsail)
+
+
 ### 作者
 
 eshamster, t-cool
