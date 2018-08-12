@@ -23,7 +23,7 @@ RUN apk add --no-cache make curl-dev automake autoconf make gcc build-base ncurs
 
 ENV PATH /root/.roswell/bin:${PATH}
 
-EXPOSE 5000
+EXPOSE 4000
 
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     apk add --no-cache openssl-dev curl && \
