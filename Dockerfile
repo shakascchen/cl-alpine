@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-
     rm -rf roswell && \
     apk del for-build
 
-RUN apk add --no-cache make curl-dev ncurses automake autoconf make gcc build-base && \
+RUN apk add --no-cache make curl-dev ncurses-dev automake autoconf make gcc build-base && \
     ros run -q
 
 ENV PATH /root/.roswell/bin:${PATH}
