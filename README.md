@@ -15,10 +15,33 @@ $ docker pull tcool/cl-base
 ```
 
 ### 使い方
+
+#### bashの起動
+
 ```bash
 $ docker run -it tcool/cl-base
-/ # ros run
 ```
+
+#### lemの起動
+
+```
+$ lem-ncurses
+```
+
+#### lemの基本操作
+
+| コマンド | 機能 |
+|:---|:---|
+| M-x lisp-mode | Lisp編集モードになります |
+| M-x start-lisp-repl | 対話環境が開始されます |
+| C-c C-c | S式をコンパイルします |
+| C-x C-e | カーソル範囲のS式を評価します |
+| C-x o | バッファの移動 |
+| C-x k | バッファの削除 |
+
+※ vi-modeもありますので、好みに合わせて選択してください。
+
+#### cavemanのロード、プロジェクトの雛形作成
 
 ```common-lisp
 * (ql:quickload :caveman2)
