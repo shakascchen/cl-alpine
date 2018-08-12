@@ -53,7 +53,7 @@ Listening on localhost:4000.
 * 
 ```
 
-ブラウザで。[http://localhost:8080](http://localhost:8080)にアクセスをすると、Hello, Clack!と表示されます。
+ブラウザで[http://localhost:8080](http://localhost:8080)にアクセスをすると、Hello, Clack!と表示されます。
 
 #### lemの起動と操作
 
