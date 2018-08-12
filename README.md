@@ -14,16 +14,39 @@ $ docker pull tcool/cl-base
 
 ### 使い方
 
-#### bashの起動
+#### コンテナの作成とログイン
+
+イメージを元に、k-mokumokuという名前でコンテナを作成します。
+
+また、ポートフォワードで、ホスト側の8080番へのリクエストをコンテナの4000番につなぎます。
 
 ```bash
-$ docker run -it tcool/cl-base
+docker run -it -p 8080:4000 --name k-mokumoku tcool/cl-base
 ```
 
-#### clackupでclackを使う
+#### Clackで"Hello, Clack!"
 ```bash
-$ clackup app.lisp --port 4000
+/ # ros run
+* (ql:quickload :clack)
+To load "clack":
+  Load 1 ASDF system:
+    clack
+; Loading "clack"
+.
+(:CLACK)
+* (defvar *handler*
+    (clack:clackup
+      (lambda (env)
+        (declare (ignore env))
+        '(200 (:content-type "text/plain") ("Hello, Clack!")))))
+
+Hunchentoot server is started.
+Listening on localhost:4000.
+*HANDLER*
+* 
 ```
+
+ブラウザで。[http://localhost:8080](http://localhost:8080)にアクセスをすると、Hello, Clack!と表示されます。
 
 #### lemの起動
 
