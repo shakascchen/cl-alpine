@@ -8,5 +8,5 @@ sudo apt-get install -y docker-engine
 sudo service docker start
 
 sudo docker pull tcool/cl-base
-docker run -it -p 8080:4000 --name k-mokumoku tcool/cl-base
+docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-base
 
