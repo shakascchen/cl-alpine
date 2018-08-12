@@ -2,11 +2,9 @@
 
 もくもく会の環境構築用のDockerfileです。
 
-[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)に少し変更して作成しました。
+[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
-Roswell, Clack, Caveman2がインストールされています。
-
-Docker Hubのページは[こちら](https://hub.docker.com/r/tcool/cl-base)です。
+Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lemがインストールされています。
 
 ### インストール
 
