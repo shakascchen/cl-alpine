@@ -6,7 +6,7 @@ RUN mkdir ${work_dir} && \
 
 # --- install roswell and some common lisp implementations --- #
 
-RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-base curl-dev glib-dev libressl-dev && \
+RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-base curl-dev glib-dev openssl-dev && \
     cd ${work_dir} && \
     git clone --depth=1 -b release https://github.com/roswell/roswell.git && \
     cd roswell && \
