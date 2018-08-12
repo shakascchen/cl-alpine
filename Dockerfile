@@ -25,7 +25,8 @@ RUN ln -s ${HOME}/.roswell/local-projects work
 ENV PATH /root/.roswell/bin:${PATH}
 
 RUN ros install fukamachi/clack && \
-    apk add --no-cache openssl-dev
+    apk add --no-cache openssl-dev && \
+    ros install fukamachi/caveman \
 
-# oprn a port for clackup
+# open a port for clackup
 EXPOSE 5000
