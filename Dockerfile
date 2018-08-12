@@ -29,4 +29,4 @@ RUN ros install fukamachi/clack && \
     ros install fukamachi/caveman
 
 # open a port for clackup
-# EXPOSE 5000
+EXPOSE 5000
