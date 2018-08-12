@@ -28,4 +28,5 @@ EXPOSE 5000
 
 RUN apk add --no-cache openssl-dev && \
     ros install fukamachi/clack && \
-    ros install fukamachi/caveman \
+    ros install fukamachi/caveman && \
+    ros install cxxxr/lem
