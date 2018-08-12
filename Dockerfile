@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-
     rm -rf roswell && \
     apk del for-build
 
-RUN apk add --no-cache make curl-dev ncurses-dev automake autoconf make gcc build-base && \
+RUN apk add --no-cache make curl-dev automake autoconf make gcc build-base ncurses-dev && \
     ros run -q
 
 ENV PATH /root/.roswell/bin:${PATH}
@@ -27,6 +27,6 @@ EXPOSE 5000
 
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     apk add --no-cache openssl-dev && \
-    ros install cxxxr/lem && \
     ros install fukamachi/clack && \
     ros install fukamachi/caveman
+    ros install cxxxr/lem && \
