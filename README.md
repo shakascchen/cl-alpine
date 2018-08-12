@@ -6,13 +6,21 @@
 
 Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lemがインストールされています。
 
-### インストール
+### 環境要件
+
+事前に、Dockerをインストールしてください。
+
+[Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
+
+[Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
+## 使い方
+
+### Dockerイメージの取得
 
 ```bash
 $ docker pull tcool/cl-base
 ```
-
-### 使い方
 
 #### コンテナの作成とログイン
 
