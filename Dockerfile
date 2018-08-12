@@ -30,6 +30,6 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
     ros install cxxxr/lem  && \
-    cat <<EOF >> app.lisp \
-(lambda (env)(declare (ignore env))'(200 (:content-type "text/plain") ("Hello, Clack!")))\
+    cat <<EOF >> app.lisp 
+(lambda (env)(declare (ignore env))'(200 (:content-type "text/plain") ("Hello, Clack!")))
 EOF
