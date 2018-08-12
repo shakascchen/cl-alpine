@@ -50,11 +50,11 @@ $ docker run -it tcool/cl-base
     - sbcl-bin
 ### 作者
 
-eshamster (hamgoostar@gmail.com)
+eshamster (hamgoostar@gmail.com), t-cool
 
 ### 著作権
 
-Copyright (c) 2016 eshamster (hamgoostar@gmail.com)
+Copyright (c) 2016 eshamster (hamgoostar@gmail.com), 2018 t-cool
 
 ### ライセンス
 
