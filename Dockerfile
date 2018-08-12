@@ -26,6 +26,6 @@ ENV PATH /root/.roswell/bin:${PATH}
 
 EXPOSE 5000
 
-RUN ros install fukamachi/clack && \
-    apk add --no-cache openssl-dev && \
+RUN apk add --no-cache openssl-dev && \
+    ros install fukamachi/clack && \
     ros install fukamachi/caveman \
