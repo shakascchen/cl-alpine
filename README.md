@@ -6,13 +6,13 @@ roswellを含んだCommon Lisp開発環境をセットアップするためのDo
 
 もくもく会用に少し変更して利用させてもらいます。
 
-## インストール
+### インストール
 
 ```bash
 $ docker pull tcool/cl-base
 ```
 
-## 使い方
+### 使い方
 ```bash
 $ docker run -it tcool/cl-base
 / # ros run
@@ -22,7 +22,7 @@ NIL
 * 
 ```
 
-## イメージの構成
+### イメージの構成
 
 - Alpine Linux (with glibc)
 - Roswell
@@ -30,14 +30,14 @@ NIL
 
 ---------
 
-## 作者
+### 作者
 
 eshamster (hamgoostar@gmail.com)
 
-## 著作権
+### 著作権
 
 Copyright (c) 2016 eshamster (hamgoostar@gmail.com)
 
-## ライセンス
+### ライセンス
 
 Distributed under the MIT License
