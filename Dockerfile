@@ -27,7 +27,7 @@ EXPOSE 4000
 
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     apk add --no-cache openssl-dev curl && \
-    ros install t-cool/clack && \
+    ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
     ros install cxxxr/lem  && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
