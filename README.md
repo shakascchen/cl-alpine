@@ -65,19 +65,14 @@ $ lem-ncurses
 ;   writing /path/to/myapp/templates/layout/default.tmpl
 ```
 
-### イメージの構成
-
-- Alpine Linux (with glibc)
-- Roswell
-    - sbcl-bin
 ### 作者
 
-eshamster (hamgoostar@gmail.com), t-cool
+eshamster, t-cool
 
 ### 著作権
 
-Copyright (c) 2016 eshamster (hamgoostar@gmail.com), 2018 t-cool
+Copyright (c) 2016 eshamster, 2018 t-cool
 
 ### ライセンス
 
-Distributed under the MIT License
+MIT
