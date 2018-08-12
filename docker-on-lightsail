@@ -7,5 +7,6 @@ sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
 sudo apt-get install -y docker-engine
 sudo service docker start
 
-sudo docker pull php:5.6-apache
-sudo docker run --name apachephp -d --restart=always -p 80:80 php:5.6-apache
+sudo docker pull tcool/cl-base
+docker run -it -p 8080:4000 --name k-mokumoku tcool/cl-base
+
