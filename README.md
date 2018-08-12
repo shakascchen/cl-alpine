@@ -1,10 +1,10 @@
 # cl-base
 
-もくもく会の環境構築用のDockerfileです。
-
-[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
+もくもく会の環境構築用のDockerfile/Docker Imageです。
 
 Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lemがインストールされています。
+
+[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
 ### 環境要件
 
