@@ -24,9 +24,8 @@ RUN apk add --no-cache make curl-dev && \
 RUN ln -s ${HOME}/.roswell/local-projects work
 ENV PATH /root/.roswell/bin:${PATH}
 
+EXPOSE 5000
+
 RUN ros install fukamachi/clack && \
     apk add --no-cache openssl-dev && \
-    ros install fukamachi/caveman
-
-# open a port for clackup
-# EXPOSE 5000
+    ros install fukamachi/caveman \
