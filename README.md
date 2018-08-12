@@ -102,8 +102,24 @@ $ lem-ncurses
 
 AWSのLightsailにデプロイします。AWSにアカウントを作成後、次の初期化スクリプトを用いて、Ubuntuのインスタンスを作成、dockerとイメージをインストールしてください。
 
-[docker-on-lightsail](https://github.com/t-cool/cl-base/blob/master/docker-on-lightsail)
+```bash
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt-get update
+sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+sudo apt-get install -y docker-engine
+sudo service docker start
 
+sudo docker pull tcool/cl-base
+```
+
+完了後、WebコンソールからSSH接続をして、次のコマンドを打てば、コンテナの中に入れます。
+
+```bash
+docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-base
+```
 
 ### 作者
 
