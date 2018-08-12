@@ -8,7 +8,7 @@ Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2
 
 ### 環境要件
 
-事前に、Dockerをインストールしてください。
+事前に、いずれかのDockerをインストールしてください。
 
 [Docker for Mac](https://docs.docker.com/docker-for-mac/install/)
 
@@ -30,7 +30,8 @@ $ docker pull tcool/cl-base
 docker run -it -p 8080:4000 --name k-mokumoku tcool/cl-base
 ```
 
-#### Clackで"Hello, Clack!"
+#### ClackでHello, Clack!
+
 ```bash
 / # ros run
 * (ql:quickload :clack)
@@ -54,13 +55,11 @@ Listening on localhost:4000.
 
 ブラウザで。[http://localhost:8080](http://localhost:8080)にアクセスをすると、Hello, Clack!と表示されます。
 
-#### lemの起動
+#### lemの起動と操作
 
 ```
 $ lem-ncurses
 ```
-
-#### lemの操作
 
 | コマンド | 機能 |
 |:---|:---|
@@ -74,7 +73,7 @@ $ lem-ncurses
 
 ※ vi-modeもありますので、好みに合わせて選択してください。
 
-#### cavemanのロード、プロジェクトの雛形作成
+#### Caveman：プロジェクトの雛形作成
 
 ```common-lisp
 * (ql:quickload :caveman2)
