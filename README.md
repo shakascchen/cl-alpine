@@ -32,10 +32,11 @@ $ lem-ncurses
 
 | コマンド | 機能 |
 |:---|:---|
-| M-x lisp-mode | Lisp編集モードになります |
-| M-x start-lisp-repl | 対話環境が開始されます |
-| C-c C-c | S式をコンパイルします |
-| C-x C-e | カーソル範囲のS式を評価します |
+| M-x lisp-mode | Lisp編集モードに変更 |
+| M-x start-lisp-repl | 対話環境の開始 |
+| C-x C-f | 新規ファイルの作成、diredの起動 |
+| C-c C-c | S式のコンパイル |
+| C-x C-e | S式の評価 |
 | C-x o | バッファの移動 |
 | C-x k | バッファの削除 |
 
