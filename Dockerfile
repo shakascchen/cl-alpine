@@ -28,5 +28,5 @@ EXPOSE 5000
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     apk add --no-cache openssl-dev && \
     ros install fukamachi/clack && \
-    ros install fukamachi/caveman
-    ros install cxxxr/lem && \
+    ros install fukamachi/caveman && \
+    ros install cxxxr/lem 
