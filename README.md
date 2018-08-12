@@ -20,13 +20,18 @@ $ docker pull tcool/cl-base
 $ docker run -it tcool/cl-base
 ```
 
+#### clackupでclackを使う
+```bash
+$ clackup app.lisp --port 4000
+```
+
 #### lemの起動
 
 ```
 $ lem-ncurses
 ```
 
-#### lemの基本操作
+#### lemの操作
 
 | コマンド | 機能 |
 |:---|:---|
