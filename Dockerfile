@@ -20,8 +20,6 @@ RUN apk add --no-cache git automake autoconf make gcc build-base curl-dev curl g
 
 ENV PATH /root/.roswell/bin:${PATH}
 
-EXPOSE 4000
-
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
@@ -29,4 +27,7 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     mv ${HOME}/.roswell/bin/lem ${HOME}/.roswell/bin/lem2 && \
     mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp && \
-    lem 
+    
+EXPOSE 4000
+
+RUN lem 
