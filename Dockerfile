@@ -28,4 +28,5 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install cxxxr/lem  && \
     mv ${HOME}/.roswell/bin/lem ${HOME}/.roswell/bin/lem2 && \
     mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem && \
+    lem --kill && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
