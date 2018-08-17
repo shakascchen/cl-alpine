@@ -30,4 +30,4 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     
 EXPOSE 4000
 
-RUN lem 
+RUN lem test.lisp --kill
