@@ -25,7 +25,7 @@ EXPOSE 4000
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
-    ros install cxxxr/lem  && \
+    ros install cxxxr/lem && \
     mv ${HOME}/.roswell/bin/lem ${HOME}/.roswell/bin/lem2 && \
     mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
