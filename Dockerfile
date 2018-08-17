@@ -29,5 +29,3 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
     
 EXPOSE 4000
-
-RUN lem test.lisp --kill
