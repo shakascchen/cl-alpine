@@ -1,6 +1,4 @@
-# cl-web
-
-## cl-webとは
+# cl-web-alpine
 
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
