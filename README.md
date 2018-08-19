@@ -24,10 +24,10 @@ $ docker pull tcool/cl-base
 
 #### コンテナの作成とログイン
 
-イメージを元にk-mokumokuという名前でコンテナを作成後、ポートフォワードでホスト側の8080番へのリクエストをコンテナの4000番につなぎます。
+イメージを元にk-mokumokuという名前でコンテナを作成後、ポートフォワードでホスト側の8888番へのリクエストをコンテナの8888番につなぎます。
 
 ```bash
-docker run -it -p 8080:4000 --name k-mokumoku tcool/cl-base
+docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
 
 #### ClackでHello, Clack!
@@ -118,7 +118,7 @@ sudo docker pull tcool/cl-base
 完了後、WebコンソールからSSH接続をして、次のコマンドを打てば、コンテナの中に入れます。
 
 ```bash
-docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-base
+docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
 
 ### 作者
@@ -127,7 +127,7 @@ eshamster, t-cool
 
 ### 著作権
 
-Copyright (c) 2016 eshamster, 2018 t-cool
+2016 eshamster, 2018 t-cool
 
 ### ライセンス
 
