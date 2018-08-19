@@ -1,12 +1,14 @@
 # cl-web
 
+## cl-webとは
+
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
 Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem、darkmatterがインストールされています。
 
 このdockerfileは、eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
-### 環境要件
+## 環境構築
 
 事前に、いずれかのDockerをインストールしてください。
 
@@ -14,9 +16,7 @@ Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem
 
 [Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-## 使い方
-
-### Docker
+### Docker（イメージの取得〜サーバの起動・Web開発）
 
 #### イメージの取得
 
