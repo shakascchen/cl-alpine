@@ -123,11 +123,11 @@ docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 
 ### 作者
 
-eshamster, t-cool
+eshamster (hamgoostar@gmail.com)
 
 ### 著作権
 
-2016 eshamster, 2018 t-cool
+2018 eshamster (hamgoostar@gmail.com)
 
 ### ライセンス
 
