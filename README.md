@@ -30,35 +30,26 @@ $ docker pull tcool/cl-base
 docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
 
-#### ClackでHello, Clack!
+#### darkmatter
+
+Common Lispを始めてさわる方は、notebook形式でLispコードを実行できるdarkmatterが便利です。
 
 ```bash
 / # ros run
-* (ql:quickload :clack)
-To load "clack":
-  Load 1 ASDF system:
-    clack
-; Loading "clack"
-.
-(:CLACK)
-* (defvar *handler*
-    (clack:clackup
-      (lambda (env)
-        (declare (ignore env))
-        '(200 (:content-type "text/plain") ("Hello, Clack!")))))
-
-Hunchentoot server is started.
-Listening on localhost:4000.
-*HANDLER*
-* 
+* (ql:quickload :darkmatter)
+* (darkmatter:start :server :hunchentoot :port 8888)
 ```
 
-ブラウザで[http://localhost:8080](http://localhost:8080)にアクセスをすると、Hello, Clack!と表示されます。
+サーバの起動後、[http://localhost:8888](http://localhost:8888)にアクセスすると、darkmatterを利用できます。
 
-#### lemの起動と操作
+darkmatterに関する詳しい情報は、[darkmatterのレポジトリ](https://github.com/tamamu/darkmatter)をご参照ください。
+
+#### lem
+
+Common Lisp統合開発環境lemを起動するには、`lem`と打ちこみます。
 
 ```
-$ lem-ncurses
+$ lem
 ```
 
 | コマンド | 機能 |
@@ -74,6 +65,9 @@ $ lem-ncurses
 ※ vi-modeもありますので、好みに合わせて選択してください。
 
 #### Caveman：プロジェクトの雛形作成
+
+Common Lisp製のWebフレームワーク「Caveman2」を起動して、プロジェクトの雛形を生成するには、次のようにします。
+ここでは、myappという名前のプロジェクトを生成するとして進めます。
 
 ```common-lisp
 * (ql:quickload :caveman2)
@@ -98,6 +92,16 @@ $ lem-ncurses
 ;   writing /path/to/myapp/templates/layout/default.tmpl
 ```
 
+サーバを起動するには、`(プロジェクト名:start :port ポート番号)`とします。例えば、myappというプロジェクトで8888番ポートでサーバを起動するには、つぎのようにします。
+
+```
+(myapp:start :port 8888)
+```
+
+ブラウザで[http://localhost:8888](http://localhost:8888)にアクセスをすると、"Hello, Caveman2!"と表示されます。
+
+Amazon lightsail等で実行するには、`localhost`を固定IPアドレスに置き換えてください。
+
 #### デプロイ
 
 AWSのLightsailにデプロイします。AWSにアカウントを作成後、次の初期化スクリプトを用いて、Ubuntuのインスタンスを作成、dockerとイメージをインストールしてください。
@@ -120,14 +124,6 @@ sudo docker pull tcool/cl-base
 ```bash
 docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
-
-### 作者
-
-eshamster (hamgoostar@gmail.com)
-
-### 著作権
-
-2018 eshamster (hamgoostar@gmail.com)
 
 ### ライセンス
 
