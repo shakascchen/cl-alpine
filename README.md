@@ -2,7 +2,7 @@
 
 もくもく会の環境構築用のDockerfile/Docker Imageです。
 
-Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lem, darkmatterがインストールされています。
+Common Lispの学習とWebアプリ開発ができるように、Roswell, Caveman2, lem, darkmatterがインストールされています。
 
 [eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
