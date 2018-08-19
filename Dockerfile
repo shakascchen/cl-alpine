@@ -29,4 +29,4 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem && \
     curl -O https://raw.githubusercontent.com/t-cool/cl-base/master/app.lisp
     
-EXPOSE 4000
+EXPOSE 4000 8888
