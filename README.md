@@ -16,7 +16,9 @@ Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem
 
 ## 使い方
 
-### Dockerイメージの取得
+### Docker
+
+#### イメージの取得
 
 ```bash
 $ docker pull tcool/cl-web
@@ -30,7 +32,35 @@ $ docker pull tcool/cl-web
 docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
 
-#### darkmatter
+#### コンテナへ再ログインをしてshellを叩く
+
+起動中のコンテナを確認するには、`docker ps`を実行します。
+
+```bash
+docker ps
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                    NAMES
+```
+
+上のように、コンテナが起動していないときには、`docker ps -a`でコンテナのIDを確認します。その後、`docker start コンテナID`でコンテナを起動します。
+
+```bash
+$ docker ps -a
+CONTAINER ID     IMAGE            COMMAND          CREATED          STATUS           PORTS                  NAMES
+1d5659fdb4f3     tcool/cl-base2   "/bin/bash"      31 minutes ago   Up 31 minutes    0.0.0.0:8888->8888/tcp k-mokumoku 
+
+$ docker start 1d5659fdb4f3 
+```
+
+コンテナにログインするには、`docker exec -it コンテナ名`bashではなく、ashを用います。
+
+```bash
+docker exec -it 1d5659fdb4f3 /bin/ash 
+#\ ros run
+* 
+```
+
+### darkmatter
 
 Common Lispを始めてさわる方は、notebook形式でLispコードを実行できるdarkmatterが便利です。
 
