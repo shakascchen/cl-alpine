@@ -52,7 +52,7 @@ CONTAINER ID     IMAGE            COMMAND          CREATED          STATUS      
 $ docker start 1d5659fdb4f3 
 ```
 
-コンテナにログインするには、`docker exec -it コンテナ名`bashではなく、ashを用います。
+`docker exec -it コンテナ名 /bin/ash`でコンテナにログインします。
 
 ```bash
 docker exec -it 1d5659fdb4f3 /bin/ash 
