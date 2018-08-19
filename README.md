@@ -74,7 +74,7 @@ Common Lispを始めてさわる方は、notebook形式でLispコードを実行
 
 darkmatterに関する詳しい情報は、[darkmatterのレポジトリ](https://github.com/tamamu/darkmatter)をご参照ください。
 
-#### lem
+### lem
 
 Common Lisp統合開発環境lemを起動するには、`lem`と打ちこみます。
 
@@ -94,7 +94,7 @@ $ lem
 
 ※ vi-modeもありますので、好みに合わせて選択してください。
 
-#### Caveman：プロジェクトの雛形作成
+### Caveman：プロジェクトの雛形作成
 
 Common Lisp製のWebフレームワーク「Caveman2」を起動して、プロジェクトの雛形を生成するには、次のようにします。
 ここでは、myappという名前のプロジェクトを生成するとして進めます。
@@ -132,7 +132,7 @@ Common Lisp製のWebフレームワーク「Caveman2」を起動して、プロ�
 
 Amazon lightsail等で実行するには、`localhost`を固定IPアドレスに置き換えてください。
 
-#### デプロイ
+### デプロイ
 
 AWSのLightsailにデプロイします。AWSにアカウントを作成後、次の初期化スクリプトを用いて、Ubuntuのインスタンスを作成、dockerとイメージをインストールしてください。
 
