@@ -4,7 +4,7 @@
 
 Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem、darkmatterがインストールされています。
 
-このdockerfileは、[eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
+このdockerfileは、eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
 ### 環境要件
 
