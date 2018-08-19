@@ -1,8 +1,8 @@
-# cl-base
+# cl-web
 
 もくもく会の環境構築用のDockerfile/Docker Imageです。
 
-Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lemがインストールされています。
+Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2, lem, darkmatterがインストールされています。
 
 [eshamsterさんのdocker-cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
@@ -19,7 +19,7 @@ Common LispでWebアプリが開発できるように、Roswell, Clack, Caveman2
 ### Dockerイメージの取得
 
 ```bash
-$ docker pull tcool/cl-base
+$ docker pull tcool/cl-web
 ```
 
 #### コンテナの作成とログイン
