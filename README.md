@@ -14,7 +14,7 @@ Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem
 
 [Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-### Docker（イメージの取得〜サーバの起動・Web開発）
+### Docker
 
 #### イメージの取得
 
