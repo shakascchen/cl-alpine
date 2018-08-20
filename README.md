@@ -2,8 +2,6 @@
 
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
-eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
-
 Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem、darkmatterがインストールされています。
 
 | ソフトウェア | 概要 |
@@ -160,6 +158,10 @@ sudo docker pull tcool/cl-base
 ```bash
 docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
+
+### 謝辞
+
+eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
 
 ### ライセンス
 
