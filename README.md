@@ -2,7 +2,7 @@
 
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
-Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem、darkmatterがインストールされています。
+Alpine Linuxをベースに、Roswell、Caveman2、lem、darkmatterがインストールしています。
 
 | ソフトウェア | 概要 |
 ----|---- 
