@@ -26,7 +26,7 @@ RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install cxxxr/lem && \
     ros install tamamu/darkmatter && \    
     mv ${HOME}/.roswell/bin/lem ${HOME}/.roswell/bin/lem2 && \
-    mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem && \
+    mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem
 
 # --- open a port for running web applications --- #
 EXPOSE 8888
