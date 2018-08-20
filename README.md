@@ -1,4 +1,4 @@
-# cl-web-alpine
+# cl-docker-alpine
 
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
