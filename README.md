@@ -2,9 +2,17 @@
 
 関西もくもく.lispの環境構築用Dockerfile/Docker Imageです。
 
+eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
+
 Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem、darkmatterがインストールされています。
 
-このdockerfileは、eshamsterさんの[cl-base](https://github.com/eshamster/docker-cl-base)を元に作成しました。
+| ソフトウェア | 概要 |
+----|---- 
+| Roswell | Common Lispの環境構築ができるユーティリティーです。 |
+| Caveman2 | Common Lisp製のWebアプリケーションフレームワークです。 |
+| lem | Common Lispの統合開発環境です。 |
+| darkmatter | notebook形式のCommon Lisp実行環境です。 |
+
 
 ## 環境構築
 
@@ -22,15 +30,15 @@ Common Lispの学習とWeb開発ができるように、Roswell、Caveman2、lem
 $ docker pull tcool/cl-web
 ```
 
-#### コンテナの作成とログイン
+#### コンテナの作成と起動
 
-イメージを元にk-mokumokuという名前でコンテナを作成後、ポートフォワードでホスト側の8888番へのリクエストをコンテナの8888番につなぎます。
+イメージを元にk-mokumokuという名前でコンテナを作成後、ポートフォワードでホスト側の8888番へのリクエストをコンテナの8888番につなぎます。`-it`オプションを使うことで、シェルを実行することができます。
 
 ```bash
 docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-base
 ```
 
-#### コンテナへ再ログインをしてshellを叩く
+#### コンテナを起動して、コンテナ内でシェルを実行する
 
 起動中のコンテナを確認するには、`docker ps`を実行します。
 
@@ -60,7 +68,7 @@ docker exec -it 1d5659fdb4f3 /bin/ash
 
 ### darkmatter
 
-Common Lispを始めてさわる方は、notebook形式でLispコードを実行できるdarkmatterが便利です。
+darkmatterを読み込み、サーバを起動します。
 
 ```bash
 / # ros run
