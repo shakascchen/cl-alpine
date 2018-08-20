@@ -5,8 +5,9 @@ echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /etc
 sudo apt-get update
 sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
 sudo apt-get install -y docker-engine
+sudo apt-get install -y docker-compose
 sudo service docker start
 
 sudo docker pull tcool/cl-base
-docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-base
+docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-alpine
 
