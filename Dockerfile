@@ -22,6 +22,7 @@ ENV PATH /root/.roswell/bin:${PATH}
 
 # --- install caveman, lem, darkmatter using roswell --- #
 RUN ln -s ${HOME}/.roswell/local-projects work && \
+    ros install fukamachi/clack && \
     ros install fukamachi/caveman && \
     ros install cxxxr/lem && \
     ros install tamamu/darkmatter && \
