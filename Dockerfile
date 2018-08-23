@@ -24,7 +24,9 @@ ENV PATH /root/.roswell/bin:${PATH}
 RUN ln -s ${HOME}/.roswell/local-projects work && \
     ros install fukamachi/caveman && \
     ros install cxxxr/lem && \
-    ros install tamamu/darkmatter && \    
+    ros install tamamu/darkmatter && \
+    ros install fukamachi/qlot && \
+    ros install fukamachi/utopian && \
     mv ${HOME}/.roswell/bin/lem ${HOME}/.roswell/bin/lem2 && \
     mv ${HOME}/.roswell/bin/lem-ncurses ${HOME}/.roswell/bin/lem
 
