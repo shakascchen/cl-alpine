@@ -8,6 +8,6 @@ sudo apt-get install -y docker-engine
 sudo apt-get install -y docker-compose
 sudo service docker start
 
-sudo docker pull tcool/cl-base
-docker run -it -p 8080:5000 --name k-mokumoku tcool/cl-alpine
+sudo docker pull tcool/cl-alphine
+docker run -it -p 8888:8888 --name k-mokumoku tcool/cl-alpine
 
